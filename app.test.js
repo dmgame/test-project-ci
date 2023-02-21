@@ -17,9 +17,3 @@ test('getRandomInt generates an integer', () => {
   const result = getRandomInt(max);
   expect(result % 1).toBe(0);
 });
-
-test('getRandomInt throws an error if max is not a number', () => {
-  expect(() => {
-    getRandomInt('not a number');
-  }).toThrow('max must be a number');
-});

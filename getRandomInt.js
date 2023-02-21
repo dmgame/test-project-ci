@@ -1,4 +1,5 @@
-function getRandomInt(max) {
+function getRandomInt(value) {
+  const max = Number(value)
   if (typeof max !== 'number') {
     throw new Error('max must be a number');
   }
